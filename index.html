@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ch˙c M?ng Ng‡y Nh‡ Gi·o Vi?t Nam 20/11</title>
+<title>Ch√∫c M?ng Ng√†y Nh√† Gi√°o Vi?t Nam 20/11</title>
 <link href="https://googleapis.com" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -17,7 +17,7 @@
     overflow: hidden;
   }
 
-  /* M‡n hÏnh phong bÏ ban d?u */
+  /* M√†n h√¨nh phong b√¨ ban d?u */
   #envelope-screen {
     text-align: center;
     cursor: pointer;
@@ -78,7 +78,7 @@
     50% { transform: translateY(-10px); }
   }
 
-  /* N?i dung thi?p chÌnh */
+  /* N?i dung thi?p ch√≠nh */
   #card-screen {
     display: none;
     position: relative;
@@ -120,7 +120,7 @@
     }
   }
 
-  /* V? trÌ c·c bÙng hoa */
+  /* V? tr√≠ c√°c b√¥ng hoa */
   .f1 { top: -25px; left: -20px; animation-delay: 0.4s; }
   .f2 { top: -25px; right: -20px; animation-delay: 0.9s; }
   .f3 { bottom: -25px; left: -20px; animation-delay: 1.4s; }
@@ -128,7 +128,7 @@
   .f5 { top: 42%; left: -32px; width: 60px; height: 60px; animation-delay: 2.3s; }
   .f6 { top: 42%; right: -32px; width: 60px; height: 60px; animation-delay: 2.7s; }
 
-  /* DÚng ch? chÌnh */
+  /* D√≤ng ch? ch√≠nh */
   .title {
     font-family: 'Dancing Script', cursive;
     font-size: 38px;
@@ -159,7 +159,7 @@
     }
   }
 
-  /* C·nh hoa roi nh? nh‡ng */
+  /* C√°nh hoa roi nh? nh√†ng */
   .petal {
     position: fixed;
     top: -10%;
@@ -183,7 +183,7 @@
 </head>
 <body>
 
-  <!-- M‡n hÏnh phong bÏ -->
+  <!-- M√†n h√¨nh phong b√¨ -->
   <div id="envelope-screen" onclick="openCard()">
     <div class="envelope">
       <div class="heart-seal">??</div>
@@ -191,9 +191,9 @@
     <button class="open-btn">B?m d? m? thi?p 20/11</button>
   </div>
 
-  <!-- M‡n hÏnh thi?p chÌnh -->
+  <!-- M√†n h√¨nh thi?p ch√≠nh -->
   <div id="card-screen">
-    <!-- 6 bÙng hoa SVG -->
+    <!-- 6 b√¥ng hoa SVG -->
     <div class="flower f1" id="fl1"></div>
     <div class="flower f2" id="fl2"></div>
     <div class="flower f3" id="fl3"></div>
@@ -201,14 +201,14 @@
     <div class="flower f5" id="fl5"></div>
     <div class="flower f6" id="fl6"></div>
 
-    <h1 class="title">Ch˙c m?ng ng‡y<br>Nh‡ gi·o Vi?t Nam 20/11</h1>
+    <h1 class="title">Ch√∫c m?ng ng√†y<br>Nh√† gi√°o Vi?t Nam 20/11</h1>
     <p class="subtitle">
-      KÌnh ch˙c th?y cÙ luÙn m?nh kh?e, h?nh ph˙c v‡ gi? m„i ng?n l?a nhi?t huy?t trÍn h‡nh trÏnh chËo l·i nh?ng chuy?n dÚ tri th?c!
+      K√≠nh ch√∫c th?y c√¥ lu√¥n m?nh kh?e, h?nh ph√∫c v√† gi? m√£i ng?n l?a nhi?t huy?t tr√™n h√†nh tr√¨nh ch√®o l√°i nh?ng chuy?n d√≤ tri th?c!
     </p>
   </div>
 
 <script>
-  // V? bÙng hoa 5 c·nh b?ng SVG
+  // V? b√¥ng hoa 5 c√°nh b?ng SVG
   const flowerSVG = (color1, color2) => `
     <svg viewBox="0 0 100 100" width="100%" height="100%">
       <g transform="translate(50,50)">
@@ -222,7 +222,7 @@
     </svg>
   `;
 
-  // G·n m‡u hoa da d?ng
+  // G√°n m√†u hoa da d?ng
   document.getElementById('fl1').innerHTML = flowerSVG('#ff8fa3', '#ffb3c1');
   document.getElementById('fl2').innerHTML = flowerSVG('#ff758f', '#ffccd5');
   document.getElementById('fl3').innerHTML = flowerSVG('#f7a072', '#ffd6ba');
@@ -230,12 +230,12 @@
   document.getElementById('fl5').innerHTML = flowerSVG('#e0aaff', '#f3d5ff');
   document.getElementById('fl6').innerHTML = flowerSVG('#ff9ebb', '#ffe5ec');
 
-  // T?o nh?c piano nh? nh‡ng b?ng Web Audio API (khÙng c?n file mp3 ngo‡i)
+  // T?o nh?c piano nh? nh√†ng b?ng Web Audio API (kh√¥ng c?n file mp3 ngo√†i)
   function playGentleMusic() {
     const AudioContext = window.AudioContext || window.webkitAudioContext;
     const ctx = new AudioContext();
     
-    // Giai di?u nh? nh‡ng (t?n s? c·c n?t nh?c)
+    // Giai di?u nh? nh√†ng (t?n s? c√°c n?t nh?c)
     const melody = [
       { freq: 523.25, dur: 0.6 }, // C5
       { freq: 659.25, dur: 0.6 }, // E5
@@ -270,7 +270,7 @@
     });
   }
 
-  // T?o hi?u ?ng c·nh hoa roi
+  // T?o hi?u ?ng c√°nh hoa roi
   function createPetals() {
     for (let i = 0; i < 18; i++) {
       const petal = document.createElement('div');
@@ -285,7 +285,7 @@
     }
   }
 
-  // H‡m m? thi?p
+  // H√†m m? thi?p
   function openCard() {
     const envScreen = document.getElementById('envelope-screen');
     const cardScreen = document.getElementById('card-screen');
@@ -299,7 +299,7 @@
       envScreen.style.display = 'none';
       cardScreen.style.display = 'flex';
       
-      // KÌch ho?t hi?u ?ng hoa n?
+      // K√≠ch ho?t hi?u ?ng hoa n?
       document.querySelectorAll('.flower').forEach(fl => {
         fl.classList.add('bloom');
       });
